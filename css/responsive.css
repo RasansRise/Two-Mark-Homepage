@@ -124,6 +124,10 @@
 	}
 	.slider .banner .middle-content2{
 		margin:auto;
+		color:white;
+	}
+	.slider .banner .middle-content2 small{
+		color:black;
 	}
 	#navlist{
 		flex-direction: column;
