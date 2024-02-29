@@ -1,3 +1,15 @@
+@media(min-width:2000px){
+	.slider .banner .middle-content2{
+		margin-left: 500px;
+		transform: scale(1.5);
+	}
+	.banner3 p{
+		margin-left: 200px;
+	}
+	.banner-title{
+		font-size: 20px;;
+	}
+}
 @media (max-width: 1200px) {
 	
 	
@@ -454,7 +466,9 @@
 }
 
 @media (max-width: 582px) {
-	
+	.content-title{
+		font-size: 20px !important;
+	} 
 	.banner3{
 		background-position: center right;
 	}
