@@ -119,6 +119,7 @@
     border:0;
     cursor: pointer;
   } */
+
 	.upper-header .fa-bars{
 		opacity: 1;
 	}
@@ -453,6 +454,36 @@
 }
 
 @media (max-width: 582px) {
+	
+	.banner3{
+		background-position: center right;
+	}
+	.banner3 p{
+		font-size: 24px;
+		margin-left:0;
+		margin: auto;
+	}
+	.upper-header .logo{
+		width:200px;
+		margin:auto;
+	}
+	.fullwidthbanner{
+		height: 30vh !important;
+	}
+	.slider .banner{
+		background-position: right 10% center;
+		position: relative;
+	}
+	
+
+	.slider .middle-content2 .title{
+		font-size: 50px;
+	}
+	.slogan{
+		margin-top:20px;
+		font-size: 20px;
+	}
+	
 	ul#navlist{
 		top:0;
 
@@ -495,7 +526,7 @@
 	}
 
 	.upper-header {
-		padding: 30px 0 0;
+		padding: 30px 10px 0;
 	}
 
 	.search-input {
