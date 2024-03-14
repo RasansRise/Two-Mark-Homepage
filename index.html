@@ -164,38 +164,46 @@
 		<!-- end topline -->
 
 		<div class="upper-header">
-				<div class="cart">
-					<div class="language">
-						<span class="language-title">English <i class="fa-solid fa-caret-down"></i></span>
-						<ul>
-							<li>
-								<a class="arabic" href="">عربي</a>
-							</li>
-							<li>
-								<a href="">English</a>
-							</li>
-						</ul>
-					</div>
-					<a href="#"><i class="fa-solid fa-user"></i></a>
-					
-					<div class="card-icon">
-						<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-						<div class="shop-items">10</div>
-					</div>
-					
-				</div>
-			
+				
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" alt="" /></a>
 				</div>
 				  
-				<i class="fa-solid fa-bars"></i>
 		</div>
 		<!-- End Upper-header -->
 
 		  <!-- Navigation -->
 		  <nav id="nav">
+			<div class="cart">
+				<div class="language">
+					<span class="language-title">E <i class="fa-solid fa-caret-down"></i></span>
+					<ul>
+						<li>
+							<a class="arabic" href="">ع</a>
+						</li>
+						<li>
+							<a href="">E</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#"><i class="fa-solid fa-user"></i></a>
+				
+				<div class="card-icon">
+					<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+					<div class="shop-items">10</div>
+				</div>
+				<div class="search-container">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<form action="">
+						<input class="search" type="search" placeholder="Type A Keyword">
+					</form>						
+				</div>
 
+				
+
+				
+			</div>
+		
 			<ul id="navlist" class="sf-menu clearfix">
 			  <!--Add current Class to make it active-->
 			  <li><a class="paragraph"href="index.html">New</a></li>
@@ -226,7 +234,9 @@
 							</ul>
 						</li> -->
 			  <li><a class="paragraph" href="contact.html">about</a></li>
+			  
 			</ul>
+			<i class="fa-solid fa-bars"></i>
 		  </nav>
 		  <!-- Navigation -->
 		  
@@ -578,7 +588,13 @@
       src="js/jquery.themepunch.revolution.min.js"
     ></script>
     <script type="text/javascript" src="js/script.js"></script>
-
+	<script>
+		let searchIcon = document.querySelector('.search-container i');
+		searchIcon.addEventListener('click',()=>{
+			let form = document.querySelector('.search-container form');
+			form.classList.toggle('opened');
+		})
+	</script>
     <!--
 	##############################
 	 - ACTIVATE THE BANNER HERE -

@@ -579,18 +579,61 @@ form.signin input::-webkit-input-placeholder {   color: #424242;  }
   align-items: center;
 }
 .upper-header .logo {
-  width:250px;
+  max-width:250px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .upper-header img{
   width: 100%;
 }
-.upper-header .contianer {
+
+.cart .search-container {
   position: relative;
 }
-.upper-header .fa-bars{
-    font-size:20px;
-    font-style: normal;
-    opacity: 0;
+.cart .search-container i{
+  cursor: pointer;
+}
+.search-container form{
+  position: absolute;
+  left:0;
+  bottom: -50px;
+}
+
+.search-container .search{
+  padding:10px;
+  opacity:0;
+
+  width:160px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  outline: none;
+  position: relative;
+  transition: 0.3s;
+}
+.search-container .search:focus{
+  width:200px;
+}
+.cart .search-container input{
+  outline: none;
+}
+/* .cart .search-container form::before{
+  font-family: "Font Awesome 6 Free";
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left:10px;
+  top: 49%;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  color:#888;
+  transition: 0.3s;
+
+} */
+.search-container form.opened .search,.cart .search-container form.opened::before{
+  opacity: 1;
 }
 .search-input {
   float: left;
@@ -620,8 +663,11 @@ form.signin input::-webkit-input-placeholder {   color: #424242;  }
 
 .cart {
   display: flex;
-  gap:10px;
+  gap:20px;
+  align-items: center;
   width: fit-content;
+}
+.cart .card-icon{
   position: relative;
 }
 .cart .language{
@@ -833,12 +879,18 @@ margin: 0 auto;
 
 #nav {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #nav > select {
   display: none;
 }
 
+#nav .fa-bars{
+  opacity: 0;
+}
 ul#navlist {
   list-style: none;
   margin: 0;
@@ -848,7 +900,9 @@ ul#navlist {
   justify-content: center;
   padding-top: 0px;
 }
-
+ul#navlist li.mobile-search{
+  display: none;
+}
 ul#navlist li {
   float: left;
   position: relative;
@@ -1074,7 +1128,10 @@ ul#navlist > li:last-child a{
 .collection img {
   width: 100%;
 }
-
+.collection .row{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .coll-box {
   position: relative;
